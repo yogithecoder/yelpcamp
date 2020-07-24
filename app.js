@@ -19,7 +19,7 @@ var commentRoutes    = require("./routes/comments"),
 
 
 //new syntax
-mongoose.connect('mongodb+srv://humbleyogi:Yogi@342@cluster0.yafsq.mongodb.net/<dbname>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://humbleyogi:Yogi@342@cluster0.yafsq.mongodb.net/YelpCamp?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
