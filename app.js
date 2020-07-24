@@ -17,21 +17,16 @@ var commentRoutes    = require("./routes/comments"),
 	indexRoutes       = require("./routes/index");
  
 
-console.log(process.env.DATABASEURL);
+var url= process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_v12"
 
 //new syntax
-mongoose.connect( process.env.DATABASEURL , {
+mongoose.connect( url , {   
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
 .then(() => console.log('Connected to DB!'))
 .catch(error => console.log(error.message));
-// mongoose.connect('mongodb+srv://humbleyogi:Yogi@342@cluster0.yafsq.mongodb.net/YelpCamp?retryWrites=true&w=majority', {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// })
-// .then(() => console.log('Connected to DB!'))
-// .catch(error => console.log(error.message));
+
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
