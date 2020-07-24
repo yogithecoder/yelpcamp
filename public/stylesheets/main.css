@@ -1,0 +1,13 @@
+.thumbnail img{
+	width : 100%;
+}
+
+.thumbnail{
+	padding:0;
+}
+
+/* we just replaced class="caption-full"  to class="caption" beacause it has default 9px padding */
+
+.delete-form{
+	display: inline;
+}
