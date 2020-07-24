@@ -4,7 +4,8 @@
   "description": "",
   "main": "YelpCamp v1",
   "scripts": {
-    "test": "app.js"
+    "test": "app.js",
+	 "start" : "node app.js"
   },
   "author": "Yogi Parmar",
   "license": "ISC",
