@@ -19,7 +19,7 @@ var commentRoutes    = require("./routes/comments"),
 
 
 //new syntax
-mongoose.connect('mongodb://localhost:27017/yelp_camp_v12', {
+mongoose.connect('mongodb+srv://humbleyogi:Yogi@342@cluster0.yafsq.mongodb.net/<dbname>?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
